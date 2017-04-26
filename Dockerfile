@@ -1,5 +1,5 @@
 FROM alpine:latest
-MAINTAINER Philip Van <phucvd.ce@gmail.com>
+MAINTAINER Jermine Van <Jermine.hu@qq.com>
 
 COPY ./entrypoint.sh /
 
