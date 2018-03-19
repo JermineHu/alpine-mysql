@@ -1,10 +1,10 @@
-FROM alpine:latest
+FROM alpine:edge
 MAINTAINER Jermine <Jermine.hu@qq.com>
 
 COPY ./entrypoint.sh /
 
 RUN chmod +x /entrypoint.sh \
- && apk --update add mariadb \
+ && apk --no-cache  add mariadb \
  && addgroup mysql mysql \
  && rm -rf /var/lib/mysql \
  && mkdir -p /var/lib/mysql \
